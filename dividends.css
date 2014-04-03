@@ -1,0 +1,92 @@
+/*
+* Dividends css framework
+* Jamal Neufeld
+*/
+    .grid-container                               { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .grid-container .col                          { float: left; display: inline; margin-left: 0; margin-right: 0; }
+    .row                                          { margin-bottom: 20px; }
+    
+    .grid-container .single.col                   { width: 100%;  }
+    .grid-container .half.col                     { width: 50%; }
+    .grid-container .third.col                    { width: 33.33%; }
+    .grid-container .quarter.col                  { width: 25%; }
+    .grid-container .fifth.col                    { width: 20%; }
+    .grid-container .sixth.col                    { width: 16.66%; }
+    .grid-container .seventh.col                  { width: 14.28%; }
+    .grid-container .eighth.col                   { width: 12.5%; }
+    .grid-container .nineth.col                   { width: 11.11%; }
+    .grid-container .tenth.col                    { width: 10%; }
+    
+    .grid-container .offset-half                  { margin-left: 50%; }
+    .grid-container .offset-third                 { margin-left: 33.33%; }
+    .grid-container .offset-quarter               { margin-left: 25%; }
+    .grid-container .offset-fifth                 { margin-left: 20%; }
+    .grid-container .offset-sixth                 { margin-left: 16.66%; }
+    .grid-container .offset-seventh               { margin-left: 14.28%; }
+    .grid-container .offset-eighth                { margin-left: 12.5%; }
+    .grid-container .offset-nineth                { margin-left: 11.11%; }
+    .grid-container .offset-tenth                 { margin-left: 10%; }
+    
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        body,html                                 { margin:0; padding:0;}
+        .grid-container                           { width: 100%; }
+        .grid-container .col                      { margin-left: 0; margin-right: 0;  }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        
+        body,html                                 { margin:0; padding:0;}
+        .grid-container                           { width: 100%; }
+        .grid-container .col                      { margin: 0; }
+        .grid-container .single.col,
+        .grid-container .half.col,
+        .grid-container .third.col,
+        .grid-container .quarter.col,
+        .grid-container .fifth.col,
+        .grid-container .sixth.col,
+        .grid-container .seventh.col,
+        .grid-container .eighth.col,
+        .grid-container .nineth.col,
+        .grid-container .tenth.col                { width: 100%;  }
+        .grid-container .half.mobile.col          { width: 50%;  }
+        .grid-container .third.mobile.col         { width: 33.33%;  }
+        .grid-container .quarter.mobile.col       { width: 25%;  }
+        
+        .grid-container .offset-half,
+        .grid-container .offset-third,
+        .grid-container .offset-quarter,
+        .grid-container .offset-fifth,
+        .grid-container .offset-sixth,
+        .grid-container .offset-seventh,
+        .grid-container .offset-eighth,
+        .grid-container .offset-nineth,
+        .grid-container .offset-tenth             { margin-left: 0; }
+    }
+    
+    .grid-container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+    
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+    
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
